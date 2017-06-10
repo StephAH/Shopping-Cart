@@ -1,21 +1,21 @@
 
  function item(name , price , quantity)
- 	{
- 		this.name = name;
- 		this.price = price;
- 		this.quantity = quantity;
- 		}
+  {
+    this.name = name;
+    this.price = price;
+    this.quantity = quantity;
+    }
  
 var braveTick = new item("Braves Ticket","25.00");
 var hawkTick = new item ("Atlanta Hawks Ticket","35.00");
-var grandTotal = hawkTick;    
+var atlBraveAdjustPrice = parseFloat($("#braveAdjustprice"));
+var atlHawkAdjustPrice = parseFloat($("#hawkAdjsutPrice"));
 
 //code for calculating math
 var braveTickPrice = 25.00;
 var hawkTickPrice = 35.00;
 var tax = 0.075;
 var shipping = 5.00;
-
   //*****Greeting******
 
 $(document).ready(function(){
@@ -35,19 +35,19 @@ $(document).ready(function(){
 
 //total over 100
 /*if(totalAndTax => 100){
-	alert("You are eligible to complete your transaction with a credit line!")
+  alert("You are eligible to complete your transaction with a credit line!")
 }
 
 else{
-	alert("Please note that all transactions that take place under $100 require cash payment only!")
+  alert("Please note that all transactions that take place under $100 require cash payment only!")
 }*/
 
 
 
 //this should loop thru the items in cart but I do not know how to make an array of objects
-for (i = 0; i < shoppingCart.length; i++){
+/*for (i = 0; i < shoppingCart.length; i++){
 }
-
+*/
 
 
 
@@ -73,7 +73,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#braveQuan").change(function(){
       var almostTotal = $(this).text();
-      $("#div3").find("#subTotal").text(braveQuan /+ hawkQuan)
+      $("#div3").find("#subTotal").val();
     });
 });
 
@@ -92,8 +92,16 @@ $(document).ready(function(){
     });
 });
 
+//***********remove braves button*****************
+$("#removeBraves").click(function(){
+    $("#div1").find("#braveQuan").remove()
+  $("#div1").find("#braveAdjustPrice").remove()
+});
 
 
+$("#removeHawks").click(function(){
+    $("#div2").find("#hawkQuan").remove()
+  $("#div2").find("#hawkAdjustPrice").remove()
+});
 
 
-//**********noticed that the arrows are only in chrome

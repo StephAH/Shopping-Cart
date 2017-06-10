@@ -1,0 +1,69 @@
+<html>
+ <head>
+ <title>Shopping Cart Page</title>
+ <link rel="stylesheet" type="text/css" href="STYLE.CSS">
+ </head>
+ 
+ <body>
+   <h2>Shopping Cart</h2>
+     <h4>Your Items</h4>
+      
+      
+  <div id="div1">
+
+      <h4 id="nom">Atlanta Braves Ticket</h4>
+          <h4>Ticket to Atlanta Braves Baseball Game</h4>
+           <label>Price:</label>
+         <h5>25.00</h5>
+       <label>Quantity:</label>
+     <input id="braveQuan" type="number" value="3" min="1">
+   <div class="product-removal">
+ <button class="remove-product">
+ 	 remove
+     </button>
+       <div id="braveAdjustPrice" class="product-line-price">75.00</div>
+         </div>
+   </div>
+<hr><br>
+  
+  <div id="div2">
+
+      <h4 id="nom">Atlanta Hakws Tickets</h4>
+    <h4>Ticket to Atlanta Hawks Basketball Game</h4>
+    <label>Price:</label>
+    <h5>35.00</h5>
+    
+   <label>Quantity:</label>
+ <input id="hawkQuan" type="number" value="2" min="1">
+   <div class="product-removal">
+     <button class="remove-product">remove</button>
+           <div id="hawkAdjustPrice" class="product-line-price">70.00</div>
+             </div>
+   </div>
+<hr><br>
+   
+ <div id="div3">
+   <div class="totals">
+     <div class="totals-items">
+       <label>Subtotal</label>
+         <div class="totals-value" id="cart-subtotal">$145.00</div>
+           </div>
+     <div class="totals-items">
+       <label>Tax (5%)</label>
+         <div class="totals-value" id="cart-tax">$4.35</div>
+           </div>
+     <div class="totals-items">
+       <label>Shipping</label>
+         <div class="totals-value" id="cart-shipping">$5.00</div>
+           </div>
+     <div class="totals-items totals-item-total">
+       <label>Grand Total</label>
+         <div class="totals-value" id="cart-total">$154.35</div>
+           </div>
+ </div>
+       
+       <button id="checkoutAlert" class="checkout">Checkout</button>
+ </div>
+   
+</body> 
+</html>

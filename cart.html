@@ -1,5 +1,6 @@
 <html>
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <title>Shopping Cart Page</title>
 <link rel="stylesheet" type="text/css" href="STYLE.CSS">
 </head>
@@ -10,36 +11,36 @@
     
     
 <div id="div1">
-  
+  <label>Product name:</label>
     <h4>Atlanta Braves ticket</h4>
       <label>Description:</label>
         <h4>Ticket to Atlanta Braves Baseball Game</h4>
           <label>Price:</label>
         <H6>25.00</H6>
       <label>Quantity</label>
-    <input type="number" value="3" min="1">
+    <input id="braveQuan" type="number" value="3" min="1">
   <div class="product-removal">
 <button class="remove-product">
-	 remove
+   remove
     </button>
-      <div class="product-line-price">75.00</div>
+      <div id="braveAdjustPrice" class="product-line-price">75.00</div>
         </div>
 
 
 <div id="div2">
-  
-    <h4>Atlanta Hakws Tickets</h4>
+  <label>Product name:</label>
+    <h4>Atlanta Hawks Tickets</h4>
       <label>Description:</label>
         <h4>Ticket to Atlanta Hawks Basketball Game</h4>
       <label>Price:</label>
     <h6>35.00</h6>
   <label>Quantity</label>
-<input type="number" value="2" min="1">
+<input id="hawkQuan" type="number" value="2" min="1">
   <div class="product-removal">
     <button class="remove-product">
-	    remove
+      remove
         </button>
-          <div class="product-line-price">70.00</div>
+          <div id="hawkAdjustPrice" class="product-line-price">70.00</div>
             </div>
 
 
@@ -47,7 +48,7 @@
   <div class="totals">
     <div class="totals-items">
       <label>Subtotal</label>
-        <div class="totals-value" id="cart-subtotal">$145.00</div>
+        <div id="subTotal" class="totals-value" id="cart-subtotal">$145.00</div>
           </div>
     <div class="totals-items">
       <label>Tax (5%)</label>
@@ -63,7 +64,7 @@
           </div>
 </div>
       
-      <button class="checkout">Checkout</button>
+      <button id="checkoutAlert" class="checkout">Checkout</button>
 </div>
 
 

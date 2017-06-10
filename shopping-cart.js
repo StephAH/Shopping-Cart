@@ -6,10 +6,9 @@
  		this.quantity = quantity;
  		}
  
-var braveTick = new item("Braves Ticket","Price","Quantity");
-var hawkTick = new item ("Atlanta Hawks Ticket","Price","Quantity");
-var totalAndTax = (hawkTickPrice*tax + braveTickPrice*tax + shipping)
-    
+var braveTick = new item("Braves Ticket","25.00");
+var hawkTick = new item ("Atlanta Hawks Ticket","35.00");
+var grandTotal = hawkTick;    
 
 //code for calculating math
 var braveTickPrice = 25.00;
@@ -35,13 +34,13 @@ $(document).ready(function(){
 
 
 //total over 100
-if(totalAndTax => 100){
+/*if(totalAndTax => 100){
 	alert("You are eligible to complete your transaction with a credit line!")
 }
 
 else{
 	alert("Please note that all transactions that take place under $100 require cash payment only!")
-}
+}*/
 
 
 
@@ -58,7 +57,7 @@ for (i = 0; i < shoppingCart.length; i++){
 $(document).ready(function(){
     $("#braveQuan").change(function(){
       var braveQuan = $(this).val();
-      $("#div1").find("#braveAdjustPrice").text(braveTickPrice * braveQuan);
+    $("#div1").find("#braveAdjustPrice").text(braveTickPrice * braveQuan);
     });
 });
 
@@ -72,8 +71,9 @@ $(document).ready(function(){
 
 //subtotal
 $(document).ready(function(){
-    $("input").val(function(){
-      $("#div3").find("#almostTotal").val(braveAdjustPrice + hawkAdjustPrice);
+    $("#braveQuan").change(function(){
+      var almostTotal = $(this).text();
+      $("#div3").find("#subTotal").text(braveQuan /+ hawkQuan)
     });
 });
 

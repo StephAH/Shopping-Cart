@@ -10,64 +10,62 @@
     <h4>Your Items</h4>
     
     
-<div id="div1">
+<div class="divv" id="div1">
   <label>Product name:</label>
     <h4>Atlanta Braves ticket</h4>
       <label>Description:</label>
         <h4>Ticket to Atlanta Braves Baseball Game</h4>
           <label>Price:</label>
-        <H6>25.00</H6>
+        <H6 class="price">25.00</H6>
       <label>Quantity</label>
-    <input id="braveQuan" type="number" value="3" min="1">
+    <input class="qt" id="braveQuan" type="number" value="3" min="1">
   <div class="product-removal">
-<button class="remove-product">
+<button id="removeBraves" class="remove-product">
    remove
     </button>
-      <div id="braveAdjustPrice" class="product-line-price">75.00</div>
+      <span id="braveAdjustPrice" class="product-line-price">75.00</span>
         </div>
 
 
-<div id="div2">
+<div class="divv" id="div2">
   <label>Product name:</label>
     <h4>Atlanta Hawks Tickets</h4>
       <label>Description:</label>
         <h4>Ticket to Atlanta Hawks Basketball Game</h4>
       <label>Price:</label>
-    <h6>35.00</h6>
+    <h6 class="price">35.00</h6>
   <label>Quantity</label>
-<input id="hawkQuan" type="number" value="2" min="1">
+<input  class="qt" id="hawkQuan" type="number" value="2" min="1">
   <div class="product-removal">
-    <button class="remove-product">
+    <button id="removeHawks" class="remove-product">
       remove
         </button>
-          <div id="hawkAdjustPrice" class="product-line-price">70.00</div>
+          <span id="hawkAdjustPrice" class="product-line-price">70.00<span>
             </div>
 
 
-<div id="div3">
+<div class="divv" id="div3">
   <div class="totals">
     <div class="totals-items">
       <label>Subtotal</label>
-        <div id="subTotal" class="totals-value" id="cart-subtotal">$145.00</div>
+      <h2 id="subTotal" class="subtotal">Subtotal: <span>$0.00</span></h2> 
           </div>
     <div class="totals-items">
       <label>Tax (5%)</label>
-        <div class="totals-value" id="cart-tax">$4.35</div>
+        <span class="totals-value" id="cart-tax">$0.00</span>
           </div>
     <div class="totals-items">
-      <label>Shipping</label>
+      <span>Shipping</span>
         <div class="totals-value" id="cart-shipping">$5.00</div>
           </div>
     <div class="totals-items totals-item-total">
       <label>Grand Total</label>
-        <div class="totals-value" id="cart-total">$154.35</div>
+        <span class="totals-value" id="cart-total">$0.00</span>
           </div>
 </div>
       
       <button id="checkoutAlert" class="checkout">Checkout</button>
 </div>
-
-
-
+            
 </body>
 </html>

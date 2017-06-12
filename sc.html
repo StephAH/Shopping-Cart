@@ -1,0 +1,70 @@
+<html>
+ <head>
+ <title>Shopping Cart Page</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script src="sc1.js"></script>
+ <link rel="stylesheet" type="text/css" href="sc2.css">
+ </head>
+ 
+ <body>
+   <h2>Shopping Cart</h2>
+     <h4>Your Items</h4>
+      
+      
+  <div class="divv" id="div1">
+
+      <h4 class="product-name">Atlanta Braves Ticket</h4>
+          <h4>Ticket to Atlanta Braves Baseball Game</h4>
+           <label>Price:</label>
+         <h5 class="price">25.00</h5>
+       <label>Quantity:</label>
+     <input class="qt" id="braveQuan" type="number" value="3" min="1">
+   <div class="product-removal">
+ <button id="removeBraves" class="remove-product">
+   remove
+     </button>
+       <span id="braveAdjustPrice" class="product-line-price">75.00</span>
+   </div>
+<hr><br>
+  
+<div class="divv" id="div2">
+      <h4 id="product-name">Atlanta Hakws Tickets</h4>
+    <h4>Ticket to Atlanta Hawks Basketball Game</h4>
+    <label>Price:</label>
+    <h5 class="price">35.00</h5>
+    
+   <label>Quantity:</label>
+ <input  class="qt" id="hawkQuan" type="number" value="2" min="1">
+   <div class="product-removal">
+     <button id="removeHawks" class="remove-product">
+      remove
+        </button>
+          <span id="hawkAdjustPrice" class="product-line-price">70.00</span>
+   </div>
+<hr><br>
+   
+ <div class="divv" id="div3">
+   <div class="totals">
+     <div class="totals-items">
+       <label>Subtotal</label>
+          <h2 id="subTotal" class="subtotal">Subtotal: <span>$0.00</span></h2> 
+          </div>
+    <div class="totals-items">
+      <label>Tax (5%)</label>
+        <span class="totals-value" id="cart-tax">$0.00</span>
+          </div>
+    <div class="totals-items">
+      <span>Shipping</span>
+        <div class="totals-value" id="cart-shipping">$5.00</div>
+          </div>
+    <div class="totals-items totals-item-total">
+      <label>Grand Total</label>
+        <span class="totals-value" id="cart-total">$0.00</span>
+          </div>
+</div>
+      
+      <button id="checkoutAlert" class="checkout">Checkout</button>
+</div>
+            
+</body>
+</html>
